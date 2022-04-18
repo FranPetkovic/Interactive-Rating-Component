@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+:root {
+    --Narancasta: hsl(25, 97%, 53%);
+    --Bijela: hsl(0, 0%, 100%);
+    --svjSiva: hsl(217, 8%, 46%);
+    --Siva: hsl(213, 10%, 22%);
+    --Plava: hsl(212, 20%, 13%);
+    --tamnoPlava: hsl(216, 12%, 8%);
+}
+
+body {
+    background-color: var(--tamnoPlava);
+}
+
+a {
+    text-decoration: none;
+    color: var(--svjSiva);
+    font-size: 20px;
+}
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--Plava);
+    max-width: 400px;
+    border-radius: 30px;
+}
+
+.main2 {
+    margin: 0 auto;
+    background-color: var(--Plava);
+    max-width: 380px;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.zvijezda {
+    background-color: var(--Siva);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.zvijezda img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 15px;
+    color: var(--svjSiva);
+    margin-bottom: 30px;
+    font-family: Overpass;
+
+}
+
+.ocijene {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.ocijene button {
+    border-radius: 50%;
+    background-color: var(--Siva);
+    color: var(--svjSiva);
+    padding: 10px;
+    border: none;
+}
+
+.ocijene button:hover {
+    background-color: var(--svjSiva);
+    color: white;
+}
+
+.submit-btn {
+    color: white;
+    background-color: var(--Narancasta);
+    width: 100%;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+.submit-btn:hover {
+    background-color: var(--svjSiva);
+    color: white;
+}
+
+.main3 {
+    margin: 0 auto;
+    background-color: var(--Plava);
+    width: 380px;
+    border-radius: 30px;
+    padding: 30px;
+    text-align: center;
+}
+
+.main3 img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.main3 h1 {
+    margin-bottom: 10px;
+}
+
+.ocjena {
+    background-color: var(--Siva);
+    width: 200px;
+    margin: 0 auto;
+    color: var(--Narancasta);
+    padding: 5px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.nevidljivo {
+    display: none;
+}
+
+.aktivniGumb {
+    background-color: var(--Narancasta) !important;
+    color: var(--Bijela) !important;
+}
